@@ -1,6 +1,6 @@
 # Object Oriented Programing 2023 Section Tasks
 
-### [Quiz 2]()
+### [Quiz #2]()
 create new class that have the following:
 - new class that is not (student or computer or laptop or pc)
 - has up to 8 different attributes or more 
