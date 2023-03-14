@@ -6,7 +6,7 @@ create new class that have the following:
 - has up to 8 different attributes or more 
 - has 5 different constructors or more 
 - has 6 different methods
-```sql
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,10 +24,10 @@ namespace OOP_Tasks
         public int Manufacture_Date;
         public string Manufacturer;
         public string Color;
-        public string Speed;
-        public string Max_Fuel;
-        public string Price;
-        public string Guarantee;
+        public int Speed;
+        public int Max_Fuel;
+        public int Price;
+        public int Guarantee_Duration;
         
         
                 // Constructor
@@ -36,7 +36,7 @@ namespace OOP_Tasks
             Console.WriteLine("Ojbect Created!");
         }
         
-                //Actions 
+                //Actions or Methods
                 public void PrintObjectInfo()
         {
             Console.WriteLine("Model: {0} , Manufacturer: {1} ", Model, Manufacturer);
@@ -59,22 +59,21 @@ namespace OOP_Tasks
             CarOne.Manufacture_Date = 2018;
             CarOne.Manufacturer = "Bayerische Motoren Werke AG - BMW";
             CarOne.Color = "Black";
-            CarOne.Speed = "155 mph";
-            CarOne.Max_Fuel = "21.9 gal";
-            CarOne.Price = "2,620,000";
-            CarOne.Guarantee = "10 Years";
+            CarOne.Speed = 155;
+            CarOne.Max_Fuel = 22;
+            CarOne.Price = 3000000;
+            CarOne.Guarantee_Duration = 10;
             
 
-            //Read Operation
             //objectName.attributeName
             Console.WriteLine("Model: {0}",CarOne.Model);
             Console.WriteLine("Manufacture Date: {0}",CarOne.Manufacture_Date);
             Console.WriteLine("Manufacturer: {0}",CarOne.Manufacturer);
             Console.WriteLine("Color: {0}",CarOne.Color);
-            Console.WriteLine("Speed: {0}",CarOne.Speed);
-            Console.WriteLine("Max Fuel: {0}",CarOne.Max_Fuel);
+            Console.WriteLine("Speed: {0} MPH",CarOne.Speed);
+            Console.WriteLine("Max Fuel: {0} GAL",CarOne.Max_Fuel);
             Console.WriteLine("Price: {0}",CarOne.Price);
-            Console.WriteLine("Guarantee: {0}",CarOne.Guarantee);
+            Console.WriteLine("Guarantee: {0} Years",CarOne.Guarantee_Duration);
     
         }
     }
